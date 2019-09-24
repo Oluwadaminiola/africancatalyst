@@ -92,6 +92,10 @@ export default new Router({
         {
           path: 'createproject',
           component: () => import('./views/fundraiser/createproject')
+        },
+        {
+          path: 'viewschedule',
+          component: () => import('./views/fundraiser/viewschedule')
         },  
       ]
     }

@@ -10,7 +10,6 @@
   src: url('../fonts/roboto/Roboto-Regular.ttf');
   font-family: roboto;
 }
-
 .logindiv{
   max-width: 1000px;
   margin: 0 auto;
@@ -268,6 +267,32 @@ table.table.fundtable tbody tr{
   border-radius: 5px;
   background-color: #f2f2f2;
 }
+.paid{
+  width: 100px;
+  height: 38px;
+  border: solid 1px rgba(244, 38, 48, 0.3);
+  background-color: rgba(244, 38, 48, 0.1);
+  display: flex;
+  font-family: SourceSansPro;
+  font-size: 14px;
+  letter-spacing: 0.1px;
+  color: #253858;
+  justify-content: center;
+  align-items: center;
+}
+.notpaid{
+  width: 100px;
+  height: 38px;
+  border: solid 1px rgba(244, 38, 48, 0.3);
+  background-color: rgba(244, 38, 48, 0.1);
+  display: flex;
+  font-family: SourceSansPro;
+  font-size: 14px;
+  letter-spacing: 0.1px;
+  color: #253858;
+  justify-content: center;
+  align-items: center;
+}
 /* .table.fundtable tbody tr td a:hover{
 
 } */
@@ -324,6 +349,12 @@ a.g-14{
   font-size: 14px;
   color: #253858;
 }
+.l-14{
+  font-family: roboto;
+  font-size: 14px;
+  color: #3a4359;
+  opacity: .5;
+}
 .s-14{
   font-family: SourceSansPro;
   font-size: 14px;
@@ -368,6 +399,11 @@ a.g-14{
   font-size: 20px;
   color: #253858;
 }
+.s-22{
+  font-family: SourceSansPro;
+  font-size: 22px;
+  color: #253858;
+}
 .b-24{
   font-family: SourceSansPro;
   font-size: 24px;
@@ -397,6 +433,24 @@ a.g-14{
   background-color: rgba(216, 216, 216, 0.1);
   padding: 6px 12px;
 } */
+input.form-control.comment{
+  border: solid 1px #d6daea;
+  background-color: rgba(214, 218, 234, 0.05);
+  border-radius: 1px;
+  font-family: Roboto;
+  font-size: 14px;
+  height: 48px;
+  color: #253858;
+  transition: .3s ease-in-out;
+  margin-top: -13px;
+}input.form-control.comment ::placeholder{
+  font-family: Roboto;
+  font-size: 14px;
+  color: rgba(58, 67, 89, 0.3);
+}input.form-control.comment:focus{
+  box-shadow: none;
+  border: 1px solid #253858;
+}
 .input-group.downloads{
   height: 38px;
   border: solid 1px #efefef;
@@ -511,12 +565,35 @@ top: 4px; left: 6px;
 #checkboxes input[type=checkbox]:checked + .atype .check{
   width: 17px;
   height: 17px;
-  box-shadow: 0 0 0 2px #28d047;;
+  box-shadow: 0 0 0 2px #28d047;
+  margin-top: +3px;
   border: solid 2px #fff;
   /* outline: 2px solid #28d047; */
   -webkit-outline-radius: 100%;
   -moz-outline-radius: 100%;
   background-color: #28d047;
+}
+.check1{
+  height: 20px;
+  width: 20px;
+  border: 2px solid #f2f2f2;
+  border-radius: 100%;
+  transition: .3s ease-in-out;
+}
+#checkboxes input[type=checkbox]{
+  display: none;
+}
+
+#checkboxes input[type=checkbox]:checked + .atype .check1{
+  width: 17px;
+  height: 17px;
+  box-shadow: 0 0 0 2px #f58634;
+  margin-top: +3px;
+  border: solid 2px #fff;
+  /* outline: 2px solid #28d047; */
+  -webkit-outline-radius: 100%;
+  -moz-outline-radius: 100%;
+  background-color: #f58634;
 }
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
@@ -665,6 +742,26 @@ background: transparent;
 }
 
 @media (max-width: 800px){
+  .r-26{
+    font-size: 20px;
+  }
+  .r-20{
+    font-size: 16px;
+  }
+  .r-14, .l-14{
+    font-size: 12px;
+  }
+  .table.fundtable thead th{
+    font-size: 10px;
+  }.table.fundtable tbody tr td{
+    font-size: 12px;
+  }
+  .stepp, .step{
+    font-size: 12px;
+    width: 50px;
+    height: 20px;
+    line-height: 18px;
+  }
   .fundrec, .whitebox{
     padding: 10px 0;
   }
