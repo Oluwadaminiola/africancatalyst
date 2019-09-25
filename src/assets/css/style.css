@@ -111,7 +111,7 @@ margin: 0;
   font-size: 12px;
   color: #fff;
 }
-.sidemenu li.nav-item a{
+.sidemenu li.nav-item a, .submenu li a{
   color: #d6daea;
   font-family: roboto;
   font-size: 14px;
@@ -230,6 +230,20 @@ min-height: 90vh;
   font-size: 15px;
   text-align: center;
 }
+.table.forecast{
+  border: solid 1px #979797;
+}
+.table.forecast thead th{
+  border: solid 1px #979797;
+  font-family: Roboto;
+  font-size: 12px;
+  color: #7b7e89;
+}.table.forecast tbody tr td{
+  border: solid 1px #979797;
+  font-family: Roboto;
+  font-size: 12px;
+  color: #0e1428;
+}
 .table.fundtable thead th{
   font-family: SourceSansPro;
   font-size: 12px;
@@ -293,10 +307,60 @@ table.table.fundtable tbody tr{
   justify-content: center;
   align-items: center;
 }
+.breadcrumb{
+  background: none;
+  padding-left: 0;
+  font-family: Roboto;
+  font-size: 14px;
+  color: rgba(14, 20, 40, 0.3);
+}.breadcrumb-item.active{
+  color: #253858;
+}.breadcrumb-item + .breadcrumb-item::before{
+  color: rgba(14, 20, 40, 0.3);
+  font-family: fontawesome;
+  content: '\f054';
+  font-size: 12px;
+}
 /* .table.fundtable tbody tr td a:hover{
 
 } */
-
+input.form-control.profileform{
+  border: none;
+  font-family: roboto;
+  font-size: 14px;
+  border-radius: 0;
+  color: #253858;
+}input.form-control.profileform:focus{
+  border: none;
+  box-shadow: none;
+}
+.form-control.profileform::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.form-control.profileform::before {
+  content: 'Select File';
+  display: inline-block;
+  background: #f58634;
+  border: 1px solid #f58634;
+  border-radius: 1px;
+  height: 42px;
+  font-family: roboto;
+  padding: 7px 10px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  color: #fff;
+  /* text-shadow: 1px 1px #fff; */
+  font-weight: 400;
+  font-size: 14px;
+}
+.form-control.profileform:hover::before {
+  border-color: #f58634;
+}
+.form-control.profileform:active::before {
+  background: #f58634;
+}
 
 
 
@@ -433,6 +497,29 @@ a.g-14{
   background-color: rgba(216, 216, 216, 0.1);
   padding: 6px 12px;
 } */
+.multiselect__tag{
+  height: 32px;
+  border: solid 1px rgba(245, 134, 52, 0.2);
+  background-color: rgba(245, 134, 52, 0.1);
+  font-family: Roboto;
+  font-size: 12px;
+  line-height: 24px;
+  color: #253858;
+}.multiselect__tag-icon{
+  line-height: 30px;
+  transition: .3s ease-in-out;
+}.multiselect__tag-icon:hover{
+  background: #02a859;
+}.multiselect__select::before{
+  display: none;
+}.multiselect__tags{
+  border: none;
+  padding: 0;
+}.multiselect__tags-wrap{
+  margin-top: +60px;
+  margin-left: -22px;
+  position: absolute;
+}
 input.form-control.comment{
   border: solid 1px #d6daea;
   background-color: rgba(214, 218, 234, 0.05);
@@ -750,6 +837,18 @@ background: transparent;
   }
   .r-14, .l-14{
     font-size: 12px;
+  }
+  .table.forecast{
+    border: solid 1px #979797;
+  }
+  .table.forecast thead th{
+    font-family: Roboto;
+    font-size: 12px;
+    color: #7b7e89;
+  }.table.forecast tbody tr td{
+    font-family: Roboto;
+    font-size: 12px;
+    color: #0e1428;
   }
   .table.fundtable thead th{
     font-size: 10px;

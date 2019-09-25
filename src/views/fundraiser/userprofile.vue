@@ -1,6 +1,14 @@
 <template>
   <div class="row mx-0">
     <div class="col-12">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item" aria-current="page"><img src="../../../public/img/userpro.svg" alt=""> User Profile</li>
+          <li class="breadcrumb-item active" aria-current="page">Create User Profile</li>
+        </ol>
+      </nav>
+    </div>
+    <div class="col-12">
       <div class="fundrec">
         <div class="row">
           <div class="col-12 mb-5">
@@ -73,7 +81,13 @@
                 </div>
               </div>
               <div class="col-lg-4"></div>
-              <div class="col-lg-8"></div>
+              <div class="col-lg-8 mb-3">
+                <input type="file" class="form-control profileform p-0">
+              </div>
+              <div class="col-lg-4"></div>
+              <div class="col-lg-8 my-5">
+                <button class="btn btn-green px-5">Create Profile</button>
+              </div>
             </div>
           </div>
         </div>

@@ -6,7 +6,7 @@
           <small class="nav-link menu">Menu</small>
         </li>
         <li class="pl-lg-3 pl-md-1 nav-item" :class="{'active': $route.path == '/fundraiser/'}">
-          <router-link to="/fundraiser/" class="nav-link">
+          <router-link to="/fundraiser/" class="nav-link py-3">
             <span class="mr-3">
               <img width="20px" src="../../public/img/dash.svg" alt />
             </span>
@@ -15,7 +15,7 @@
         </li>
         <li class="pl-lg-3 pl-md-1 nav-item" :class="{'active': $route.path == '/fundraiser/createprofile' || $route.path == '/fundraiser/projectlisting'}">
           <a
-            class="nav-link"
+            class="nav-link py-3"
             href="#repo"
             data-toggle="collapse"
             aria-expanded="false"
@@ -30,7 +30,7 @@
           <div class="collapse" id="repo">
             <ul class="nav flex-column submenu">
               <li class="pl-4 nav-item">
-                <a class="pl-4 nav-link">Create Projects</a>
+                <router-link to="/fundraiser/createproject" class="pl-4 nav-link">Create Projects</router-link>
               </li>
               <li class="pl-4 nav-item">
                 <router-link to="/fundraiser/projectlisting" class="pl-4 nav-link">Project Pipeline</router-link>
@@ -39,7 +39,7 @@
           </div>
         </li>
         <li class="pl-lg-3 pl-md-1 nav-item" :class="{'active': $route.path == '/fundraiser/userprofile'}">
-          <router-link to="/fundraiser/userprofile" class="nav-link">
+          <router-link to="/fundraiser/userprofile" class="nav-link py-3">
             <span class="mr-3">
               <img width="20px" src="../../public/img/project.svg" />
             </span>
@@ -47,7 +47,7 @@
           </router-link>
         </li>
         <li class="pl-lg-3 pl-md-1 nav-item" :class="{'active': $route.path == '/fundraiser/billing'}">
-          <router-link to="/fundraiser/billing" class="nav-link">
+          <router-link to="/fundraiser/billing" class="nav-link py-3">
             <span class="mr-3">
               <img width="20px" src="../../public/img/billing.svg" />
             </span>
@@ -55,7 +55,7 @@
           </router-link>
         </li>
         <li class="pl-lg-3 pl-md-1 nav-item" :class="{'active': $route.path == '/fundraiser/messages'}">
-          <router-link to="/fundraiser/messages" class="nav-link d-flex">
+          <router-link to="/fundraiser/messages" class="nav-link d-flex py-3">
             <span class="mr-3">
               <img width="20px" src="../../public/img/messages.svg" alt />
             </span>
@@ -71,7 +71,7 @@
           <small class="nav-link menu">Tools</small>
         </li>
         <li class="pl-lg-3 pl-md-1 nav-item" :class="{'active': $route.path == '/fundraiser/downloads'}">
-          <router-link to="/fundraiser/downloads" class="nav-link">
+          <router-link to="/fundraiser/downloads" class="nav-link py-3">
             <span class="mr-3">
               <img width="20px" src="../../public/img/downloads.svg" alt />
             </span>

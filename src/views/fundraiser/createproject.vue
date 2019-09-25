@@ -1,6 +1,16 @@
 <template>
   <div class="row mx-0">
     <div class="col-12">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item" aria-current="page">
+            <img src="../../../public/img/company.svg" alt /> Projects
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">Create Project</li>
+        </ol>
+      </nav>
+    </div>
+    <div class="col-12">
       <div class="fundrec">
         <div class="row" v-if="firstStep">
           <div class="col-12 mb-5">
@@ -915,14 +925,55 @@
                   <input type="text" placeholder="Enter an amount" class="form-control" />
                 </div>
               </div>
-              <div class="col-lg-3 mb-3"></div>
-              <b class="r-14">Upload a Summary of your Project Business Plan</b>
-              <br />
-              <small class="r-12">It should contain summaried points about you full business plan an</small>
-              <div class="col-lg-8 offset-lg-1 mb-3"></div>
+              <div class="col-lg-3"></div>
+              <div class="col-lg-9 my-4">
+                <p class="r-14">Forecast Information</p>
+                <div class="table-responsive">
+                  <table class="table forecast">
+                    <thead>
+                      <th></th>
+                      <th>YEAR</th>
+                      <th>REVENUE</th>
+                      <th>EBIDATA</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>2017</td>
+                        <td>$ 4,000,000</td>
+                        <td>$ 5,000,000</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>2018</td>
+                        <td>$ 4,000,000</td>
+                        <td>$ 5,000,000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="col-lg-3 mb-3">
+                <b class="r-14">Upload a Summary of your Project Business Plan</b>
+                <br />
+                <small
+                  class="r-12"
+                >It should contain summaried points about you full business plan an</small>
+              </div>
+
+              <div class="col-lg-8 offset-lg-1 mb-3">
+                <div class="fundraiserform">
+                  <div class="dragimage">
+                    <p class="text-center">
+                      <img src="../../../public/img/dragimg.svg" alt="">
+                    </p>
+                    <p class="text-center r-12">Click to upload a document or just drag and drop</p>
+                  </div>
+                </div>
+              </div>
 
               <div class="col-lg-4"></div>
-              <div class="col-lg-8">
+              <div class="col-lg-8 mt-5">
                 <button class="btn btn-green px-5">Create Profile</button>
                 <button class="btn btn-clear ml-lg-3 px-5" @click="third">Previous Step</button>
               </div>

@@ -1,6 +1,14 @@
 <template>
   <div class="row mx-0">
     <div class="col-12">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item" aria-current="page"><img src="../../../public/img/company.svg" alt=""> Company Profile</li>
+          <li class="breadcrumb-item active" aria-current="page">Create Company Profile</li>
+        </ol>
+      </nav>
+    </div>
+    <div class="col-12">
       <div class="fundrec">
         <div class="row">
           <div class="col-12 mb-5">
@@ -22,20 +30,21 @@
                   <input type="text" placeholder="Enter company’s name" class="form-control px-0" />
                 </div>
               </div>
-              <div class="col-lg-3 col-md-4 mb-3">
+              <div class="col-lg-3 col-md-4 mb-5">
                 <b class="r-14">Industry Sector</b>
                 <br />
                 <small
                   class="r-12"
                 >Choose an industry sector your company falls under, multiple choices are allowed</small>
               </div>
-              <div class="col-lg-8 offset-lg-1 col-md-8 mb-3">
+              <div class="col-lg-8 offset-lg-1 col-md-8 mb-5">
                 <div class="fundraiserform">
                   <label>Industry Sector</label>
                   <div class="fundselect">
-                    <select class="form-control px-0">
+                    <multiselect v-model="value" :options="industries" :multiple="true"></multiselect>
+                    <!-- <select class="form-control px-0">
                       <option v-for="industry in industries" :key="industry">{{ industry }}</option>
-                    </select>
+                    </select>-->
                   </div>
                 </div>
               </div>
@@ -173,15 +182,21 @@
   </div>
 </template>
 <script>
+import Multiselect from "vue-multiselect";
+
 export default {
   data() {
     return {
+      value: [],
       firstStep: true,
       secondStep: false,
       success: false,
       regions: ["West Africa", "East Africa", "North Africa"],
       industries: ["Extractive Industries", "Renewable Energy", "Power"]
     };
+  },
+  components: {
+    Multiselect
   },
   methods: {
     second() {
