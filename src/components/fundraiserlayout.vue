@@ -1,6 +1,8 @@
 <template>
   <div class="wrapper">
-    <aside class="menu-sidebar col-xs-12 col-lg-2 px-0 position-fixed shadow d-none d-lg-block pt-5" >
+    <aside
+      class="menu-sidebar col-xs-12 col-lg-2 px-0 position-fixed shadow d-none d-lg-block pt-5"
+    >
       <ul class="nav sidemenu mt-5">
         <li class="pl-lg-3 pl-md-1 nav-item">
           <small class="nav-link menu">Menu</small>
@@ -13,7 +15,10 @@
             <span class>Company Profile</span>
           </router-link>
         </li>
-        <li class="pl-lg-3 pl-md-1 nav-item" :class="{'active': $route.path == '/fundraiser/createprofile' || $route.path == '/fundraiser/projectlisting'}">
+        <li
+          class="pl-lg-3 pl-md-1 nav-item"
+          :class="{'active': $route.path == '/fundraiser/createprofile' || $route.path == '/fundraiser/projectlisting'}"
+        >
           <a
             class="nav-link py-3"
             href="#repo"
@@ -38,7 +43,10 @@
             </ul>
           </div>
         </li>
-        <li class="pl-lg-3 pl-md-1 nav-item" :class="{'active': $route.path == '/fundraiser/userprofile'}">
+        <li
+          class="pl-lg-3 pl-md-1 nav-item"
+          :class="{'active': $route.path == '/fundraiser/userprofile'}"
+        >
           <router-link to="/fundraiser/userprofile" class="nav-link py-3">
             <span class="mr-3">
               <img width="20px" src="../../public/img/project.svg" />
@@ -46,7 +54,10 @@
             <span>User Profile</span>
           </router-link>
         </li>
-        <li class="pl-lg-3 pl-md-1 nav-item" :class="{'active': $route.path == '/fundraiser/billing'}">
+        <li
+          class="pl-lg-3 pl-md-1 nav-item"
+          :class="{'active': $route.path == '/fundraiser/billing'}"
+        >
           <router-link to="/fundraiser/billing" class="nav-link py-3">
             <span class="mr-3">
               <img width="20px" src="../../public/img/billing.svg" />
@@ -54,7 +65,10 @@
             <span>Billing</span>
           </router-link>
         </li>
-        <li class="pl-lg-3 pl-md-1 nav-item" :class="{'active': $route.path == '/fundraiser/messages'}">
+        <li
+          class="pl-lg-3 pl-md-1 nav-item"
+          :class="{'active': $route.path == '/fundraiser/messages'}"
+        >
           <router-link to="/fundraiser/messages" class="nav-link d-flex py-3">
             <span class="mr-3">
               <img width="20px" src="../../public/img/messages.svg" alt />
@@ -70,7 +84,10 @@
         <li class="pl-lg-3 pl-md-1 nav-item">
           <small class="nav-link menu">Tools</small>
         </li>
-        <li class="pl-lg-3 pl-md-1 nav-item" :class="{'active': $route.path == '/fundraiser/downloads'}">
+        <li
+          class="pl-lg-3 pl-md-1 nav-item"
+          :class="{'active': $route.path == '/fundraiser/downloads'}"
+        >
           <router-link to="/fundraiser/downloads" class="nav-link py-3">
             <span class="mr-3">
               <img width="20px" src="../../public/img/downloads.svg" alt />
@@ -81,6 +98,16 @@
         <li class="nav-item px-4 mt-5">
           <div class="comprofile">
             <p class="w-14">Company Profile</p>
+            <div class="progress" style="height: 5px;">
+              <div
+                class="progress-bar bg-success"
+                role="progressbar"
+                style="width: 50%"
+                aria-valuenow="50"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
             <small class="w-12">50% Complete</small>
           </div>
         </li>

@@ -1,12 +1,12 @@
 <template>
   <div class="row">
-    <div class="col-12">
+    <!-- <div class="col-12">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item" aria-current="page"><img src="../../../public/img/company.svg" alt="">&nbsp;Billing</li>
         </ol>
       </nav>
-    </div>
+    </div> -->
     <div class="col-lg-12">
       <h2 class="r-26">
         <b>Billing</b>
