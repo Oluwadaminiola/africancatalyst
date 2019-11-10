@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid">
+  <div class="container-fluid px-0">
     <div class="row">
       <div class="col-lg-7 px-0 d-none d-md-block">
         <div class="login">
@@ -13,7 +13,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-5 px-0">
+      <div class="col-lg-5 px-0" style="overflow-y: auto; overflow-x: hidden;">
         <div class="login-container">
           <div class="row">
             <div class="col-lg-10 offset-lg-1 col-sm-12 m-auto">

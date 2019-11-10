@@ -12,7 +12,7 @@
             <span class="mr-3">
               <img width="20px" src="../../public/img/dash.svg" alt />
             </span>
-            <span class>Company Profile</span>
+            <span class>Investor's Profile</span>
           </router-link>
         </li>
         <li
@@ -29,16 +29,19 @@
             <span class="mr-3">
               <img width="20px" src="../../public/img/incidence.svg" alt />
             </span>
-            <span>Projects</span>
+            <span>Deals</span>
             <i class="fas fa-angle-right float-right js-rotate-if-collapsed mt-1"></i>
           </a>
           <div class="collapse" id="repo">
             <ul class="nav flex-column submenu">
               <li class="pl-4 nav-item">
-                <router-link to="/fundraiser/createproject" class="pl-4 nav-link">Create Projects</router-link>
+                <router-link to="/investor/createdealrequest" class="pl-4 nav-link">Create Deal Request</router-link>
               </li>
               <li class="pl-4 nav-item">
-                <router-link to="/fundraiser/projectlisting" class="pl-4 nav-link">Project Pipeline</router-link>
+                <router-link to="/investor/dealrequest" class="pl-4 nav-link">Deal Requests</router-link>
+              </li>
+              <li class="pl-4 nav-item">
+                <router-link to="/investor/deals" class="pl-4 nav-link">Booked Deals</router-link>
               </li>
             </ul>
           </div>
@@ -51,7 +54,7 @@
             <span class="mr-3">
               <img width="20px" src="../../public/img/project.svg" />
             </span>
-            <span>User Profile</span>
+            <span>Invitation</span>
           </router-link>
         </li>
         <li
@@ -62,7 +65,7 @@
             <span class="mr-3">
               <img width="20px" src="../../public/img/billing.svg" />
             </span>
-            <span>Billing</span>
+            <span>User Profile</span>
           </router-link>
         </li>
         <li
@@ -95,22 +98,7 @@
             <span>Downloads</span>
           </router-link>
         </li>
-        <li class="nav-item px-4 mt-5">
-          <div class="comprofile">
-            <p class="w-14">Company Profile</p>
-            <div class="progress" style="height: 5px;">
-              <div
-                class="progress-bar bg-success"
-                role="progressbar"
-                style="width: 50%"
-                aria-valuenow="50"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
-            </div>
-            <small class="w-12">50% Complete</small>
-          </div>
-        </li>
+        
       </ul>
     </aside>
     <main class="main col-lg-10 col-xs-12 offset-lg-2 col-md-12 px-0">
@@ -205,7 +193,7 @@
           </div>
         </nav>
       </header>
-      <div id="content" class="container-fluid pt-4">
+      <div id="content">
         <router-view />
       </div>
     </main>

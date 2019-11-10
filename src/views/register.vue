@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid" >
+  <div class="container-fluid px-0" >
     <div class="row position-fixed">
       <div class="col-lg-7 px-0 d-none d-md-block">
         <div class="login ">

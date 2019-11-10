@@ -51,6 +51,11 @@
   width: 100% !important;
   margin-left: unset !important;
 }
+.recwhite{
+  border: solid 1px #f5f7fa;
+  background-color: #ffffff;
+  padding: 30px;
+}
 .fundrec{
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
@@ -111,14 +116,14 @@ margin: 0;
   font-size: 12px;
   color: #fff;
 }
-.sidemenu li.nav-item a, .submenu li a{
+.sidemenu li.nav-item a, .submenu li a, .mobmenu li.nav-item a{
   color: #d6daea;
   font-family: roboto;
   font-size: 14px;
-}.sidemenu li.nav-item{
+}.sidemenu li.nav-item, .mobmenu li.nav-item{
   transition: .3s ease-in-out;
 }
-.sidemenu li.nav-item.active{
+.sidemenu li.nav-item.active, .mobmenu li.nav-item{
   background: #171b4a;
 }
 .navbar-toggle .navbar-toggle-bar {
@@ -400,12 +405,22 @@ a.g-14{
   font-weight: 300;
   color: #253858;
 }
+.ll-12{
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #3a4359;
+}
 .l-12{
   font-family: Roboto;
   font-size: 12px;
   font-weight: 300;
   line-height: 1.42;
   color: #253858;
+}
+.disabled{
+  opacity: .4;
 }
 .w-14{
   font-family: Roboto;
@@ -415,6 +430,12 @@ a.g-14{
 .r-14{
   font-family: roboto;
   font-size: 14px;
+  color: #253858;
+}
+.r-17{
+  font-family: roboto;
+  font-size: 17px;
+  letter-spacing: 0.12px;
   color: #253858;
 }
 .l-14{
@@ -437,6 +458,11 @@ a.g-14{
   font-family: roboto;
   font-size: 15px;
   color: #253858;
+}
+.yr-12{
+  font-family: Roboto;
+  font-size: 12px;
+  color: #f58634;
 }
 .l-15{
   color: rgba(47,70,98, 0.7);
@@ -542,6 +568,18 @@ input.form-control.comment{
   box-shadow: none;
   border: 1px solid #253858;
 }
+input.form-control.search{
+  border-radius: 3px;
+  border: solid 1px #d6daea;
+  background-color: #ffffff;
+  transition: .3s ease-in-out;
+  font-family: Roboto;
+  font-size: 14px;
+  color: #7b7e89;
+}input.form-control.search:focus{
+  border: 1px solid #253858;
+  box-shadow: none;
+}
 .input-group.downloads{
   height: 38px;
   border: solid 1px #efefef;
@@ -581,16 +619,52 @@ input.form-control.comment{
   font-size: 15px;
   color: #7b7e89;
 }
-.checkbox1-custom, .checkbox-custom {
+.checkbox1-custom, .checkbox-custom, .checkbox2-custom{
 display: none;
 }
-.checkbox1-custom-label, .checkbox-custom-label {
+.checkbox1-custom-label, .checkbox-custom-label, .checkbox2-custom-label {
 display: inline-block;
 position: relative;
 vertical-align: middle;
 /* margin: 5px; */
 cursor: pointer;
 }
+.checkbox2-custom + .checkbox2-custom-label:before {
+content: '';
+background: #fff;
+border-radius: 3px;
+border: 1px solid #f58634;
+display: inline-block;
+vertical-align: middle;
+width: 18px; height: 18px;
+padding: 1px; margin-right: 10px;
+transition: .3s ease-in-out;
+}
+.checkbox2-custom:checked + .checkbox2-custom-label:before{
+background: #f58634;
+}
+.checkbox2-custom:checked + .checkbox-custom-label:after{
+  content: "";
+  /* padding: 2px; */
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  background: #f58634;
+  top: 6px; left: 6px;
+}
+.checkbox2-custom:checked + .checkbox2-custom-label:after {
+content: "";
+padding: 2px;
+position: absolute;
+width: 1px;
+height: 13px;
+border: solid #fff;
+border-width: 0 2px 2px 0;
+transform: rotate(45deg);
+top: 4px; left: 6px;
+}
+
+
 .checkbox1-custom + .checkbox1-custom-label:before {
 content: '';
 background: #fff;
@@ -831,7 +905,70 @@ background: transparent;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
   color: #2f4662;
 }
-
+@media (max-width: 1200px){
+  .r-26{
+    font-size: 20px;
+  }
+  .r-20{
+    font-size: 16px;
+  }
+  .r-17{
+    font-size: 13px;
+  }
+  .r-14, .l-14{
+    font-size: 12px;
+  }
+  .table.forecast{
+    border: solid 1px #979797;
+  }
+  .table.forecast thead th{
+    font-family: Roboto;
+    font-size: 12px;
+    color: #7b7e89;
+  }.table.forecast tbody tr td{
+    font-family: Roboto;
+    font-size: 12px;
+    color: #0e1428;
+  }
+  .table.fundtable thead th{
+    font-size: 10px;
+  }.table.fundtable tbody tr td{
+    font-size: 12px;
+  }
+  .stepp, .step{
+    font-size: 12px;
+    width: 50px;
+    height: 20px;
+    line-height: 18px;
+  }
+  .sidemenu li.nav-item a, .submenu li a, .mobmenu li.nav-item a{
+    font-size: 11px;
+  }
+  .fundrec, .whitebox{
+    padding: 10px 0;
+  }
+  .fundraiserform{
+    padding: 10px;
+  }
+  .recwhite{
+    padding: 10px;
+  }
+  .fundraiserform label{
+    font-size: 12px;
+  }
+  .fundraiserform ::placeholder{
+    font-size: 12px;
+  }
+  .fundraiserform input.form-control, .fundraiserform textarea.form-control, .fundraiserform select.form-control{
+    font-size: 12px;
+  }
+  .breadcrumb{
+    font-size: 12px;
+  }
+  input.form-control.search{
+    font-size: 10px;
+  }
+}
 @media (max-width: 800px){
   .r-26{
     font-size: 20px;
@@ -865,10 +1002,16 @@ background: transparent;
     height: 20px;
     line-height: 18px;
   }
+  .sidemenu li.nav-item a, .submenu li a, .mobmenu li.nav-item a{
+    font-size: 11px;
+  }
   .fundrec, .whitebox{
     padding: 10px 0;
   }
   .fundraiserform{
+    padding: 10px;
+  }
+  .recwhite{
     padding: 10px;
   }
   .fundraiserform label{
@@ -879,5 +1022,11 @@ background: transparent;
   }
   .fundraiserform input.form-control, .fundraiserform textarea.form-control, .fundraiserform select.form-control{
     font-size: 12px;
+  }
+  .breadcrumb{
+    font-size: 12px;
+  }
+  input.form-control.search{
+    font-size: 10px;
   }
 }

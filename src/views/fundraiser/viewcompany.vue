@@ -1,5 +1,5 @@
     <template>
-  <div class="row mx-0">
+  <div class="row mx-0 pb-5">
     <div class="col-12">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
@@ -27,7 +27,7 @@
           <div class="col-lg-7"></div>
           <div class="col-lg-1 col-md-12">
             <p>
-              <a href="#" class="g-14">Edit Profile</a>
+              <router-link to="/fundraiser/createprofile" class="g-14">Edit Profile</router-link>
             </p>
           </div>
         </div>

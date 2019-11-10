@@ -76,7 +76,7 @@
                       <td>N 100,000</td>
                       <td><img src="../../../public/img/confirmed.svg" alt="">&nbsp; Confirmed</td>
                       <td>
-                        <router-link to="/fundraiser/viewproject">View</router-link>
+                        <router-link to="/viewproject">View</router-link>
                       </td>
                     </tr>
                     <tr>
@@ -87,7 +87,7 @@
                       <td>N 100,000</td>
                       <td><img src="../../../public/img/confirmed.svg" alt="">&nbsp; Confirmed</td>
                       <td>
-                        <router-link to="/fundraiser/viewproject">View</router-link>
+                        <router-link to="/viewproject">View</router-link>
                       </td>
                     </tr>
                   </tbody>

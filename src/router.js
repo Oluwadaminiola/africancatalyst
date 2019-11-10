@@ -9,7 +9,7 @@ export default new Router({
   hash: false,
   routes: [
     {
-      path: '/',
+      path: '/home',
       name: 'home',
       component: Home
     },
@@ -22,7 +22,7 @@ export default new Router({
       component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
     },
     {
-      path: '/login',
+      path: '/',
       name: 'login',
       component: () => import('./views/login')
     },
@@ -54,7 +54,7 @@ export default new Router({
       },
       children: [
         {
-          path: '',
+          path: 'createprofile',
           component: () => import('./views/fundraiser/createprofile')
         },
         {
@@ -74,7 +74,7 @@ export default new Router({
           component: () => import('./views/fundraiser/viewuser')
         },
         {
-          path: 'viewcompany',
+          path: '',
           component: () => import('./views/fundraiser/viewcompany')
         },
         {
@@ -97,6 +97,43 @@ export default new Router({
           path: 'viewschedule',
           component: () => import('./views/fundraiser/viewschedule')
         },  
+      ]
+    },
+    {
+      path: '/investor',
+      name: 'investor',
+      components: {
+        default: () => import('./components/investorlayout')
+      },
+      children:[
+        {
+          path: 'deals',
+          name: 'deals',
+          components: {
+            default: () => import('./views/investor/bookdeals')
+          }
+        },
+        {
+          path: 'dealrequest',
+          name: 'dealrequest',
+          components: {
+            default: () => import('./views/investor/dealrequest')
+          }
+        },
+        {
+          path: 'createdealrequest',
+          name: 'createdealrequest',
+          components: {
+            default: () => import('./views/investor/createdealrequest')
+          }
+        },
+        {
+          path: 'projectpipeline',
+          name: 'projectpipeline',
+          components: {
+            default: () => import('./views/investor/projectpipeline')
+          }
+        }
       ]
     }
   ]

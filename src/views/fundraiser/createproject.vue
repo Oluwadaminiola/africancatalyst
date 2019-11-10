@@ -918,11 +918,11 @@
                 </div>
                 <div class="fundraiserform mb-3">
                   <label>Revenue</label>
-                  <input type="text" placeholder="Enter an amount" class="form-control" />
+                  <input type="text" placeholder="Enter an amount" class="form-control px-0" />
                 </div>
                 <div class="fundraiserform">
                   <label>EBITDA</label>
-                  <input type="text" placeholder="Enter an amount" class="form-control" />
+                  <input type="text" placeholder="Enter an amount" class="form-control px-0" />
                 </div>
               </div>
               <div class="col-lg-3"></div>

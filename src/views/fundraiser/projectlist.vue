@@ -14,7 +14,7 @@
         </h2>
     </div>
     <div class="col-lg-2">
-        <router-link to="/fundraiser/createproject">
+        <router-link to="/createproject">
             <button class="btn btn-green px-5">Add Project</button>
         </router-link>
     </div>
