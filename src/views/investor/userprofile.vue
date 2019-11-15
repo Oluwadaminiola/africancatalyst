@@ -1,13 +1,5 @@
     <template>
   <div class="row mx-0">
-    <div class="col-12">
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item" aria-current="page"><img src="../../../public/img/userpro.svg" alt=""> User Profile</li>
-          <li class="breadcrumb-item active" aria-current="page">View User Profile</li>
-        </ol>
-      </nav>
-    </div>
     <div class="col-12 my-4">
       <div class="whitebox">
         <div class="row">
@@ -17,19 +9,18 @@
           <div class="col-lg-3 col-md-4">
             <h4 class="r-20">Joshua Oluwagbemiga</h4>
             <p class="r-14">CTO First City Monument Resource</p>
-            <a href="#" class="g-10">EDIT</a>&nbsp;
-            <a href="#" class="g-10">CHANGE PASSWORD</a>
+            
           </div>
           <div class="col-lg-6"></div>
           <div class="col-lg-2 col-md-12">
-              <p><a href="#" class="r-14"><u>View Linkedin Profile</u></a></p>
-              <p class="r-14">Victoria Island</p>
-              <p class="r-14">josh@fcmr.com</p>
+              <p><a href="#" class="r-14"><i class="fab fa-linkedin mr-2" style="color: #2a75b4; font-size: 17px;"></i> <u>View Linkedin Profile</u></a></p>
+              <p class="r-14"><i class="fas fa-map-marker-alt mr-2" style="color: #d6daea; font-size: 15px;"></i> Victoria Island</p>
+              <p class="r-14"><i class="fas fa-envelope mr-2" style="color: #d6daea; font-size: 15px;"></i> josh@fcmr.com</p>
           </div>
         </div>
       </div>
     </div>
-    <div class="col-12">
+    <div class="col-12 mb-5">
       <div class="whitebox">
         <div class="row">
           <div class="col-12 mb-4">
@@ -60,9 +51,7 @@
         </div>
       </div>
     </div>
-    <div class="col-12 my-5">
-        <router-link to="/fundraiser/createuser" class="r-15"><i class="fas fa-plus-circle" style="font-size: 15px;"></i> Create another Profile</router-link>
-    </div>
+    
   </div>
 </template>
         

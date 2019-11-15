@@ -7,9 +7,9 @@ Vue.use(Router)
 export default new Router({
   mode: 'history',
   hash: false,
-  routes: [
+  routes: [ 
     {
-      path: '/home',
+      path: '/',
       name: 'home',
       component: Home
     },
@@ -22,7 +22,7 @@ export default new Router({
       component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
     },
     {
-      path: '/',
+      path: '/login',
       name: 'login',
       component: () => import('./views/login')
     },
@@ -78,6 +78,10 @@ export default new Router({
           component: () => import('./views/fundraiser/viewcompany')
         },
         {
+          path: 'companyprofile',
+          component: () => import('./views/fundraiser/viewcompany')
+        },
+        {
           path: 'billing',
           component: () => import('./views/fundraiser/billing')
         },
@@ -114,6 +118,10 @@ export default new Router({
           }
         },
         {
+          path: 'changepassword',
+          component: () => import('./views/investor/changepassword')
+        },
+        {
           path: 'dealrequest',
           name: 'dealrequest',
           components: {
@@ -132,6 +140,55 @@ export default new Router({
           name: 'projectpipeline',
           components: {
             default: () => import('./views/investor/projectpipeline')
+          }
+        },
+        {
+          path: 'messages',
+          name: 'messages',
+          components: {
+            default: () => import('./views/investor/messages')
+          }
+        },
+        {
+          path: 'dealsprofile',
+          name: 'dealsprofile',
+          components: {
+            default: () => import('./views/investor/dealsprofile')
+          }
+        },
+        {
+          path: '',
+          name: 'investorprofile',
+          components: {
+            default: () => import('./views/investor/investorprofile')
+          }
+        },
+        {
+          path: 'investorprofile',
+          name: 'investorprofile',
+          components: {
+            default: () => import('./views/investor/investorprofile')
+          }
+        },
+        {
+          path: 'createinvestor',
+          name: 'createinvestor',
+          components: {
+            default: () => import('./views/investor/createinvestor')
+          }
+        },
+        {
+          path: 'userprofile',
+          name: 'userprofile',
+          components: {
+            default: () => import('./views/investor/userprofile')
+          }
+        },
+        {
+          path: 'downloads',
+          name: 'downloads',
+          components: {
+            default: () => import('./views/investor/downloads')
           }
         }
       ]
